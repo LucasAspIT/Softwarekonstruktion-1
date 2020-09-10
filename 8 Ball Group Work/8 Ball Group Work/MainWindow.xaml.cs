@@ -1,0 +1,194 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace _8_Ball_Group_Work {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window {
+        public MainWindow() {
+            InitializeComponent();
+
+            // Initiate a new random
+            Random ballRandomizer = new Random();
+
+            // String to remember the 8 ball output for the user
+            string output;
+
+
+            // Use the random to create an int and set it to 1-20
+            int randomNumber = ballRandomizer.Next(1, 21);
+
+            // Create a switch to choose an answer from the 8 ball - use the randomNumber to choose a response from the 8 ball
+            switch (randomNumber) {
+                case 1:
+                    output = "It is certain.";
+                    break;
+                case 2:
+                    output = "It is decidedly so.";
+                    break;
+                case 3:
+                    output = "Without a doubt.";
+                    break;
+                case 4:
+                    output = "Yes - definitely.";
+                    break;
+                case 5:
+                    output = "You may rely on it.";
+                    break;
+                case 6:
+                    output = "As I see it, yes.";
+                    break;
+                case 7:
+                    output = "Most likely.";
+                    break;
+                case 8:
+                    output = "Outlook good.";
+                    break;
+                case 9:
+                    output = "Yes.";
+                    break;
+                case 10:
+                    output = "Signs point to yes.";
+                    break;
+                case 11:
+                    output = "Reply hazy, try again.";
+                    break;
+                case 12:
+                    output = "Ask again later.";
+                    break;
+                case 13:
+                    output = "Better not tell you now.";
+                    break;
+                case 14:
+                    output = "Cannot predict now.";
+                    break;
+                case 15:
+                    output = "Concentrate and ask again.";
+                    break;
+                case 16:
+                    output = "Don't count on it.";
+                    break;
+                case 17:
+                    output = "My reply is no.";
+                    break;
+                case 18:
+                    output = "My sources say no.";
+                    break;
+                case 19:
+                    output = "Outlook not so good.";
+                    break;
+                case 20:
+                    output = "Very doubtful.";
+                    break;
+                // If somehow a case isn't chosen, error out
+                default:
+                    output = "Error.";
+                    break;
+            }
+
+            // Set the switch output as the response from the 8 ball to the user
+            ballLabel.Content = output;
+
+        }
+
+
+        // Test button
+/*
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            // Initiate a new random
+            Random ballRandomizer = new Random();
+
+            // String to remember the 8 ball output for the user
+            string output;
+
+
+            // Use the random to create an int and set it to 1-20
+            int randomNumber = ballRandomizer.Next(1, 21);
+
+            // Create a switch to choose an answer from the 8 ball - use the randomNumber to choose a response from the 8 ball
+            switch (randomNumber) {
+                case 1:
+                    output = "It is certain.";
+                    break;
+                case 2:
+                    output = "It is decidedly so.";
+                    break;
+                case 3:
+                    output = "Without a doubt.";
+                    break;
+                case 4:
+                    output = "Yes - definitely.";
+                    break;
+                case 5:
+                    output = "You may rely on it.";
+                    break;
+                case 6:
+                    output = "As I see it, yes.";
+                    break;
+                case 7:
+                    output = "Most likely.";
+                    break;
+                case 8:
+                    output = "Outlook good.";
+                    break;
+                case 9:
+                    output = "Yes.";
+                    break;
+                case 10:
+                    output = "Signs point to yes.";
+                    break;
+                case 11:
+                    output = "Reply hazy, try again.";
+                    break;
+                case 12:
+                    output = "Ask again later.";
+                    break;
+                case 13:
+                    output = "Better not tell you now.";
+                    break;
+                case 14:
+                    output = "Cannot predict now.";
+                    break;
+                case 15:
+                    output = "Concentrate and ask again.";
+                    break;
+                case 16:
+                    output = "Don't count on it.";
+                    break;
+                case 17:
+                    output = "My reply is no.";
+                    break;
+                case 18:
+                    output = "My sources say no.";
+                    break;
+                case 19:
+                    output = "Outlook not so good.";
+                    break;
+                case 20:
+                    output = "Very doubtful.";
+                    break;
+                // If somehow a case isn't chosen, error out
+                default:
+                    output = "Error.";
+                    break;
+            }
+
+            // Set the switch output as the response from the 8 ball to the user
+            ballLabel.Content = output;
+        }
+*/
+    }
+}

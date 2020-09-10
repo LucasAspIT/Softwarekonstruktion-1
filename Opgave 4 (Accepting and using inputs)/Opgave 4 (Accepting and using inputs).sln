@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4 (Accepting and using inputs)", "Opgave 4 (Accepting and using inputs)\Opgave 4 (Accepting and using inputs).csproj", "{9CBDDAAE-22C3-48C7-95B9-ABA1878CFC51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4.1", "Opgave 4.1\Opgave 4.1.csproj", "{A112BE18-9D0B-49E9-9E1F-8FC91239F4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4.2", "Opgave 4.2\Opgave 4.2.csproj", "{C73F12DB-1150-490A-B79D-49C3CB74838B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4.3", "Opgave 4.3\Opgave 4.3.csproj", "{CA8BACEE-C11D-484F-9EBD-3770F3474841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4.4 (Square area calculation)", "Opgave 4.4 (Square area calculation)\Opgave 4.4 (Square area calculation).csproj", "{9BBC323D-086D-418F-A952-81B5B104AE89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave 4.5 (Askii art in console)", "Opgave 4.5 (Askii art in console)\Opgave 4.5 (Askii art in console).csproj", "{835957D9-13FB-4622-B73B-C49DA67C4DE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try and catch experimentation", "Try and catch experimentation\Try and catch experimentation.csproj", "{1B238031-1D06-4E98-9EEE-5000A9803158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CBDDAAE-22C3-48C7-95B9-ABA1878CFC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBDDAAE-22C3-48C7-95B9-ABA1878CFC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBDDAAE-22C3-48C7-95B9-ABA1878CFC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBDDAAE-22C3-48C7-95B9-ABA1878CFC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A112BE18-9D0B-49E9-9E1F-8FC91239F4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A112BE18-9D0B-49E9-9E1F-8FC91239F4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A112BE18-9D0B-49E9-9E1F-8FC91239F4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A112BE18-9D0B-49E9-9E1F-8FC91239F4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73F12DB-1150-490A-B79D-49C3CB74838B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73F12DB-1150-490A-B79D-49C3CB74838B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73F12DB-1150-490A-B79D-49C3CB74838B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73F12DB-1150-490A-B79D-49C3CB74838B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8BACEE-C11D-484F-9EBD-3770F3474841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8BACEE-C11D-484F-9EBD-3770F3474841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8BACEE-C11D-484F-9EBD-3770F3474841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8BACEE-C11D-484F-9EBD-3770F3474841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBC323D-086D-418F-A952-81B5B104AE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBC323D-086D-418F-A952-81B5B104AE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBC323D-086D-418F-A952-81B5B104AE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBC323D-086D-418F-A952-81B5B104AE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835957D9-13FB-4622-B73B-C49DA67C4DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835957D9-13FB-4622-B73B-C49DA67C4DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835957D9-13FB-4622-B73B-C49DA67C4DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835957D9-13FB-4622-B73B-C49DA67C4DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B238031-1D06-4E98-9EEE-5000A9803158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B238031-1D06-4E98-9EEE-5000A9803158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B238031-1D06-4E98-9EEE-5000A9803158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B238031-1D06-4E98-9EEE-5000A9803158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CECA12CD-0977-47AE-93B9-9AD413933D74}
+	EndGlobalSection
+EndGlobal
