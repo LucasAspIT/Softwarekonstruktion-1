@@ -13,6 +13,7 @@
         <TextBox x:Name="rcpDesc" Text="Description" FontSize="20" HorizontalAlignment="Left" Margin="547,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="177" Width="235" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" SpellCheck.IsEnabled="True" AutomationProperties.IsRequiredForForm="True"/>
         <Button x:Name="rcpSave" Content="Save" FontSize="30" HorizontalAlignment="Left" Margin="613,335,0,0" VerticalAlignment="Top" Width="169" Height="74" Click="rcpSave_Click"/>
         <Image HorizontalAlignment="Left" Height="115" Margin="547,10,0,0" VerticalAlignment="Top" Width="235"/>
+        <Button x:Name="rcpLoad" Content="Load" FontSize="30" HorizontalAlignment="Left" Margin="344,10,0,0" VerticalAlignment="Top" Width="111" Height="49" Click="rcpLoad_Click"/>
 
     </Grid>
 </Window>
