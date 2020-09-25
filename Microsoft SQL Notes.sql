@@ -131,3 +131,76 @@ WHERE CurrentlyStudying='Softwarekonstruktion' OR CurrentlyTeaching='Softwarekon
 
 ----------
 
+USE AspIT
+-- Selects the columns from the different tables and gives them a temporary name
+SELECT Students.FirstName AS 'First Name', Students.LastName AS 'Last Name', Teachers.FirstName AS 'Teacher', Students.Age AS 'S Age', Teachers.Age AS 'T Age'
+FROM Students
+-- Combine rows from two or more tables, based on a related column between them
+FULL OUTER JOIN Teachers ON Students.Age=Teachers.Age
+
+ORDER BY Students.Age, Teachers.Age;
+
+----------
+
+USE AspIT
+CREATE TABLE InternshipConsultant (
+	ConsultantID int IDENTITY(1,1) PRIMARY KEY,
+	FirstName varchar(100),
+	LastName varchar(100),
+	Age int,
+	SupportingStudentYear varchar(6)
+	);
+	
+----------
+
+USE AspIT
+INSERT INTO InternshipConsultant
+VALUES
+	('Albus',
+	'Dumbledore',
+	115);
+	
+----------
+
+-- Add a new column for the students to keep track of their current year
+USE AspIT
+ALTER TABLE Students
+ADD
+	StudentYear varchar(6);
+	
+----------
+
+-- Set the year for several students using their ID
+USE AspIT
+UPDATE Students
+SET
+	StudentYear = 'Year 1'
+WHERE StudentID BETWEEN 1 AND 9;
+
+-- WHERE StudentID BETWEEN 10 AND 17
+-- WHERE StudentID BETWEEN 18 AND 25
+
+----------
+
+USE AspIT
+UPDATE InternshipConsultant
+SET
+	SupportingStudentYear = 'Year 3'
+WHERE ConsultantID=1;
+
+----------
+
+USE AspIT
+SELECT InternshipConsultant.FirstName AS 'Consultant', Students.FirstName, Students.LastName, Students.StudentYear
+FROM InternshipConsultant
+RIGHT JOIN Students ON InternshipConsultant.SupportingStudentYear=Students.StudentYear
+
+WHERE Students.StudentYear='Year 3';
+
+----------
+
+--- Union experimentation
+USE AspIT
+SELECT StudentID AS 'Student/Teacher ID', FirstName, LastName, Age, CurrentlyStudying AS 'Current Subject' FROM Students
+UNION ALL
+SELECT TeacherID, FirstName, LastName, Age, CurrentlyTeaching FROM Teachers;
