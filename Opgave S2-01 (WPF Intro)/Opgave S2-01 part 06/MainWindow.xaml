@@ -1,0 +1,20 @@
+﻿<Window x:Class="Opgave_S2_01_part_06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgave_S2_01_part_06"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <StackPanel >
+            
+        <TextBox x:Name="input" Text="Input your name here" GotFocus="InputGotFocus" Height="25" Width="200" FontSize="16" Margin="0 150 0 0"/>
+        <Button x:Name="button" Content="Submit" Height="20" Width="50" HorizontalAlignment="Center" Margin="0 10" IsEnabled="False" Click="button_Click"/>
+        <TextBlock x:Name="output" Height="40" Width="205" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

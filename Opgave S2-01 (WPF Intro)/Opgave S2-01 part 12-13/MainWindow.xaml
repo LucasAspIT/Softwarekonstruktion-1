@@ -1,0 +1,14 @@
+﻿<Window x:Class="Opgave_S2_01_part_12_13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgave_S2_01_part_12_13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="checkBox" Content="Show text" IsThreeState="True" HorizontalAlignment="Left" Margin="347,158,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_UnChecked" Click="checkBox_Click"/>
+        <TextBlock x:Name="textblockText" HorizontalAlignment="Left" Margin="358,213,0,0" TextWrapping="Wrap" Text="Uncheck!" VerticalAlignment="Top" Height="30" Width="115"/>
+
+    </Grid>
+</Window>
