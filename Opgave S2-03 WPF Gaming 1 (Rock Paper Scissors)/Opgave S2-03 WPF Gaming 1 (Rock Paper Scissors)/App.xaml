@@ -1,0 +1,9 @@
+﻿<Application x:Class="Opgave_S2_03_WPF_Gaming_1__Rock_Paper_Scissors_.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Opgave_S2_03_WPF_Gaming_1__Rock_Paper_Scissors_"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

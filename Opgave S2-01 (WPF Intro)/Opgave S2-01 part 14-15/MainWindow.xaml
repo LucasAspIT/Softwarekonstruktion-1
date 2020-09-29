@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Opgave_S2_01_part_14_15"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="mainWindow">
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="75">
-            <RadioButton Content="RadioButton" Margin="0 0 0 5" GroupName="Group1"/>
-            <RadioButton Content="RadioButton" Margin="0 0 0 5" GroupName="Group1"/>
-            <RadioButton Content="RadioButton" Margin="0 0 0 5" GroupName="Group1"/>
+            <RadioButton x:Name="radRed" Content="Red" Margin="0 0 0 5" GroupName="Group1" Checked="RadRed_Checked"/>
+            <RadioButton x:Name="radYellow" Content="Yellow" Margin="0 0 0 5" GroupName="Group1" Checked="RedYellow_Checked"/>
+            <RadioButton x:Name="radGreen" Content="Green" Margin="0 0 0 5" GroupName="Group1" Checked="RedGreen_Checked"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="75">
-            <RadioButton Content="RadioButton" Margin="0 0 0 5"/>
-            <RadioButton Content="RadioButton" Margin="0 0 0 5"/>
-            <RadioButton Content="RadioButton" Margin="0 0 0 5"/>
+            <RadioButton x:Name="radHide" Content="Hide" Margin="0 0 0 5" Checked="RadHide_Checked" Unchecked="RadHide_Unchecked"/>
+            <RadioButton x:Name="radInactive" Content="Inactive" Margin="0 0 0 5" Checked="RadInactive_Checked"/>
+            <RadioButton x:Name="radActive" Content="Active" Margin="0 0 0 5" IsChecked="True" Checked="RadActive_Checked"/>
         </StackPanel>
 
     </Grid>

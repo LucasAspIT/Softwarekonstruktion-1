@@ -1,0 +1,39 @@
+﻿<Window x:Class="Opgave_S2_03_WPF_Gaming_1__Rock_Paper_Scissors_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Opgave_S2_03_WPF_Gaming_1__Rock_Paper_Scissors_"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Rock Paper Scissors" Height="450" Width="600">
+    <Grid>
+
+        <Rectangle Fill="Red" HorizontalAlignment="Left" Height="227" Stroke="Black" VerticalAlignment="Top" Width="227" Margin="305,96,0,0"/>
+        <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="227" Stroke="Black" VerticalAlignment="Top" Width="227" Margin="60,96,0,0"/>
+        <Canvas Height="227" Width="227" Margin="60,96,306,96">
+            <Canvas.Background>
+                <ImageBrush ImageSource="images\paper.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Canvas Height="227" Width="227" Margin="305,96,60,96" Grid.ColumnSpan="2" >
+            <Canvas.Background>
+                <ImageBrush ImageSource="images\rock.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Label Content="PLAYER" FontSize="30" FontWeight="Heavy" HorizontalAlignment="Left" Margin="358,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="ARCHNEMESIS" FontSize="30" FontWeight="Heavy" HorizontalAlignment="Left" Margin="59,46,0,0" VerticalAlignment="Top"/>
+        
+        <Button x:Name="playerRock" Content="Rock" HorizontalAlignment="Left" Margin="385,342,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="playerScissors" Content="Scissors" HorizontalAlignment="Left" Margin="343,367,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="playerPaper" Content="Paper" HorizontalAlignment="Left" Margin="425,367,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <Label Content="X WINS" FontSize="20" HorizontalAlignment="Left" Margin="60,350,0,0" VerticalAlignment="Top"/>
+         
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="152,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="0 " HorizontalAlignment="Left" Margin="412,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="0 " HorizontalAlignment="Left" Margin="164,15,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
