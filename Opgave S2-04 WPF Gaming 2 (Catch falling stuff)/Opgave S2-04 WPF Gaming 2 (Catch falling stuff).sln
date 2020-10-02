@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opgave S2-04 WPF Gaming 2 (Catch falling stuff)", "Opgave S2-04 WPF Gaming 2 (Catch falling stuff)\Opgave S2-04 WPF Gaming 2 (Catch falling stuff).csproj", "{2675A1B7-C958-4621-8810-7F6BC044749E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2675A1B7-C958-4621-8810-7F6BC044749E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2675A1B7-C958-4621-8810-7F6BC044749E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2675A1B7-C958-4621-8810-7F6BC044749E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2675A1B7-C958-4621-8810-7F6BC044749E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFB50F99-2784-4584-96B2-E8EF85D58D3A}
+	EndGlobalSection
+EndGlobal
