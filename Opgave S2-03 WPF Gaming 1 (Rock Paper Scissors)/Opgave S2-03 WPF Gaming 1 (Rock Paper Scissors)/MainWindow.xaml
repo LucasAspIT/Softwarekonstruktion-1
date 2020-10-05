@@ -6,34 +6,85 @@
         xmlns:local="clr-namespace:Opgave_S2_03_WPF_Gaming_1__Rock_Paper_Scissors_"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="Rock Paper Scissors" Height="450" Width="600">
     <Grid>
 
+        <!-- Red and blue rectangles -->
         <Rectangle Fill="Red" HorizontalAlignment="Left" Height="227" Stroke="Black" VerticalAlignment="Top" Width="227" Margin="305,96,0,0"/>
         <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="227" Stroke="Black" VerticalAlignment="Top" Width="227" Margin="60,96,0,0"/>
-        <Canvas Height="227" Width="227" Margin="60,96,306,96">
+
+        <!-- Archnemesis rock paper and scissors images -->
+        <StackPanel RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <ScaleTransform ScaleX="-1"/>
+            </StackPanel.RenderTransform>
+            <Canvas x:Name="archRock" Height="227" Width="227" Margin="245,96,0,96" Visibility="Hidden">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="images\rock.png"/>
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+        <Canvas x:Name="archPaper" Height="227" Width="227" Margin="60,96,306,96" Visibility="Hidden">
             <Canvas.Background>
                 <ImageBrush ImageSource="images\paper.png"/>
             </Canvas.Background>
         </Canvas>
-        <Canvas Height="227" Width="227" Margin="305,96,60,96" Grid.ColumnSpan="2" >
+        <Canvas x:Name="archScissors" Height="227" Width="227" Margin="58,96,306,96" Visibility="Hidden">
+            <Canvas.Background>
+                <ImageBrush ImageSource="images\scissors.png"/>
+            </Canvas.Background>
+        </Canvas>
+
+        <!-- Player rock paper and scissors images -->
+        <Canvas x:Name="playRock" Height="227" Width="227" Margin="245,96,0,96" Visibility="Hidden">
             <Canvas.Background>
                 <ImageBrush ImageSource="images\rock.png"/>
             </Canvas.Background>
         </Canvas>
+        <StackPanel RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <ScaleTransform ScaleX="-1"/>
+            </StackPanel.RenderTransform>
+            <Canvas x:Name="playPaper" Height="227"  Width="227" Margin="0,96,245,96" Visibility="Hidden">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="images\paper.png"/>
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+        <StackPanel RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <ScaleTransform ScaleX="-1"/>
+            </StackPanel.RenderTransform>
+            <Canvas x:Name="playScissors" Height="227" Width="227" Margin="50,96,306,96" Visibility="Hidden">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="images\scissors.png"/>
+                </Canvas.Background>
+            </Canvas>
+        </StackPanel>
+
+        <!-- Archnemesis and Player labels -->
         <Label Content="PLAYER" FontSize="30" FontWeight="Heavy" HorizontalAlignment="Left" Margin="358,46,0,0" VerticalAlignment="Top"/>
         <Label Content="ARCHNEMESIS" FontSize="30" FontWeight="Heavy" HorizontalAlignment="Left" Margin="59,46,0,0" VerticalAlignment="Top"/>
-        
-        <Button x:Name="playerRock" Content="Rock" HorizontalAlignment="Left" Margin="385,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="playerScissors" Content="Scissors" HorizontalAlignment="Left" Margin="343,367,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="playerPaper" Content="Paper" HorizontalAlignment="Left" Margin="425,367,0,0" VerticalAlignment="Top" Width="75"/>
 
-        <Label Content="X WINS" FontSize="20" HorizontalAlignment="Left" Margin="60,350,0,0" VerticalAlignment="Top"/>
-         
+        <!-- Player buttons -->
+        <Button x:Name="playerRock" Content="Rock" HorizontalAlignment="Left" Margin="385,342,0,0" VerticalAlignment="Top" Width="75" Click="playerRock_Click"/>
+        <Button x:Name="playerScissors" Content="Scissors" HorizontalAlignment="Left" Margin="343,367,0,0" VerticalAlignment="Top" Width="75" Click="playerScissors_Click"/>
+        <Button x:Name="playerPaper" Content="Paper" HorizontalAlignment="Left" Margin="425,367,0,0" VerticalAlignment="Top" Width="75" Click="playerPaper_Click"/>
+
+        <!-- Win/lose announcer -->
+        <Label x:Name="winnerAnnounce" Content="" FontSize="20" HorizontalAlignment="Left" Margin="60,350,0,0" VerticalAlignment="Top"/>
+
+        <!-- Score tracking -->
         <Label Content="Score:" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top"/>
         <Label Content="Score:" HorizontalAlignment="Left" Margin="152,0,0,0" VerticalAlignment="Top"/>
-        <Label Content="0 " HorizontalAlignment="Left" Margin="412,15,0,0" VerticalAlignment="Top"/>
-        <Label Content="0 " HorizontalAlignment="Left" Margin="164,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ties:" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="playerScoreDisplay" Content="0 " HorizontalAlignment="Left" Margin="412,15,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="archScoreDisplay" Content="0 " HorizontalAlignment="Left" Margin="164,15,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tieScoreDisplay" Content="0 " HorizontalAlignment="Left" Margin="287,15,0,0" VerticalAlignment="Top"/>
+
+        <!-- Tell user how to start the game -->
+        <Label x:Name="startup" Content="Select a hand to start the game!" FontSize="30" HorizontalAlignment="Left" Margin="81,183,0,0" VerticalAlignment="Top" Height="50" Width="430" Background="Black" Foreground="White"/>
 
     </Grid>
 </Window>
